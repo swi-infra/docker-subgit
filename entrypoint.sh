@@ -8,7 +8,7 @@ CHECK_TIME=${CHECK_TIME:-30}
 
 # Make sure user exist
 if ! grep $SUBGIT_USER /etc/passwd; then
-    useradd --no-create-home --home-dir $SUBGIT_HOME --system --uid $SUBGIT_UID --shell /bin/bash $SUBGIT_USER
+    useradd --home-dir $SUBGIT_HOME --system --uid $SUBGIT_UID --shell /bin/bash $SUBGIT_USER
 fi
 
 # Make sure user has access to it's home
