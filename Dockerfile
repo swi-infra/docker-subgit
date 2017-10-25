@@ -4,7 +4,7 @@ ENV SUBGIT_VERSION      3.2.6
 
 # Dependencies
 RUN ( apt-get update && \
-      apt-get install -y git subversion wget incron sudo procps && \
+      apt-get install -y git subversion wget incron sudo procps vim && \
       rm -rf /var/lib/apt/lists/* )
 
 # Download from official website and install
