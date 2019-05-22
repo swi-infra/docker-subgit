@@ -14,13 +14,13 @@ This image is simple way to deploy a subgit service to migrate.
 How ?
 -----
 
-Image: [corfr/subgit](https://registry.hub.docker.com/u/corfr/subgit/)
+Image: [quay.io/swi-infra/subgit](https://quay.io/swi-infra/subgit/)
 
 You need to expose your existing Git folder as the volume /repo.git.
 
 This will start the translation using configuration stored in the `myrepo.git/subgit` folder:
 ```
-docker run --name "subgit-myrepo" --volume /local/folder/myrepo.git:/repo.git corfr/subgit
+docker run --name "subgit-myrepo" --volume /local/folder/myrepo.git:/repo.git quay.io/swi-infra/subgit
 ```
 
 You can use the 'post-update' Git hook to eventually upload changes.

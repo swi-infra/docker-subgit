@@ -1,6 +1,6 @@
-FROM openjdk:8-jre
+FROM openjdk:11-jre
 
-ENV SUBGIT_VERSION      3.2.6
+ENV SUBGIT_VERSION      3.3.6
 
 # Dependencies
 RUN ( apt-get update && \
